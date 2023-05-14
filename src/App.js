@@ -29,8 +29,8 @@ let App = (props) => {
             console.log(data)
           })
           reset()
-          cos[0] = ''
-
+          
+          cos.splice(0, cos.length)
       } else {
         const data = await response.json();
         cos = Object.values(data)
